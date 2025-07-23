@@ -1,0 +1,38 @@
+/* slim tab height */
+.tab-background {
+  min-height: auto !important;
+}
+#tabbrowser-tabs {
+  &[orient="horizontal"] {
+    min-height: auto !important;
+  }
+}
+
+/* add some space between the buttons and ends of the toolbar  */
+.browser-toolbar {
+  padding: 0 6px !important;
+}
+
+/* slim space between buttons */
+toolbar .toolbarbutton-1 {
+  padding: 0 !important;
+}
+
+/* slimmer urlbar  */
+#urlbar-background {
+  margin: 1px 0 !important;
+  border-radius: 10px !important;
+}
+
+/* extensions popup */
+#unified-extensions-view {
+  /* remove "extensions" text  */
+  .panel-header { 
+    display: none !important;
+  }
+
+  /* remove horizontal line */
+  toolbarseparator {
+    display: none;
+  }
+}
