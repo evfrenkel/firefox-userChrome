@@ -24,6 +24,22 @@ toolbar .toolbarbutton-1 {
   border-radius: 10px !important;
 }
 
+/* identity text smaller */
+#identity-icon-label {
+  font-size: .9em !important;
+}
+/* identity background radius match urlbar */
+#identity-box > .identity-box-button, #urlbar-label-box {
+  border-radius: 8px !important;
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
+}
+#urlbar-searchmode-switcher {
+  border-radius: 8px !important;
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
+}
+
 /* extensions popup */
 #unified-extensions-view {
   /* remove "extensions" text  */
