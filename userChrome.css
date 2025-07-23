@@ -1,3 +1,8 @@
+/* remove border between chrome and content */
+#navigator-toolbox {
+  border-bottom: none !important;
+}
+
 /* slim tab height */
 .tab-background {
   min-height: auto !important;
@@ -8,7 +13,15 @@
   }
 }
 
-/* add some space between the buttons and ends of the toolbar  */
+#nav-bar {
+  /* remove border between tab-bar and nav-bar */
+  border-top: none !important;
+
+  /* raise height by 1px */
+  height: 41px !important;
+}
+
+/* add some space between the buttons and ends of the nav-bar  */
 .browser-toolbar {
   padding: 0 6px !important;
 }
@@ -20,7 +33,7 @@ toolbar .toolbarbutton-1 {
 
 /* slimmer urlbar  */
 #urlbar-background {
-  margin: 1px 0 !important;
+  margin: 2px 0 !important;
   border-radius: 10px !important;
 }
 
@@ -29,16 +42,35 @@ toolbar .toolbarbutton-1 {
   font-size: .9em !important;
 }
 /* identity background radius match urlbar */
-#identity-box > .identity-box-button, #urlbar-label-box {
+#urlbar-label-box, #urlbar-searchmode-switcher, #identity-icon-box {
   border-radius: 8px !important;
-  margin-top: 1px !important;
-  margin-bottom: 1px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
 }
-#urlbar-searchmode-switcher {
-  border-radius: 8px !important;
-  margin-top: 1px !important;
-  margin-bottom: 1px !important;
+
+
+/* smaller text in urlbar */
+#urlbar, #searchbar {
+  font-size: 1.15em !important;
 }
+
+/* smaller buttons in nav-bar */
+toolbar .toolbarbutton-1 {
+  & > .toolbarbutton-icon {
+    width: calc(2 * var(--toolbarbutton-inner-padding) + 14px) !important;
+    height: calc(2 * var(--toolbarbutton-inner-padding) + 14px) !important;
+  }
+}
+.toolbarbutton-1 {
+  & > .toolbarbutton-badge-stack > .toolbarbutton-icon {
+    width: 14px !important;
+  }
+}
+#tracking-protection-icon, #identity-icon {
+  width: 14px !important;
+  height: 14px !important;
+}
+
 
 /* extensions popup */
 #unified-extensions-view {
