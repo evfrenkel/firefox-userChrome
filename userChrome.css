@@ -84,3 +84,14 @@ toolbar .toolbarbutton-1 {
     display: none;
   }
 }
+
+
+.tab-audio-button {
+    /* disable clicking the speaker to mute the tab */
+    pointer-events: none !important;
+
+    /* make the icon smaller */
+    margin-inline-end: 0 !important;
+    --icon-size-default: 10px !important;
+    --button-size-icon-small: 16px !important;
+}
